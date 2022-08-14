@@ -1,0 +1,25 @@
+<script>
+    alert(`
+Moving domains!
+
+Make sure you check where the service your trying to visit has moved to
+`);
+    const loc = window.location.host;
+
+    const moved = {
+        "smol.win": "l.frcat.xyz",
+        "bonfireparty.win": "chat.frcat.xyz",
+        "discowod.com": "frcat.xyz",
+        "discowod.com": "frcat.xyz",
+        "frcat.win": "frcat.xyz",
+        "discowd.win": "frcat.xyz",
+        "discowod.win": "frcat.xyz",
+        fallback: "frcat.xyz",
+    };
+
+    if (!moved[loc]) {
+        window.location.href = "https://" moved.fallback;
+    } else {
+        window.location.href = "https://" "https://" moved[loc];
+    }
+</script>
